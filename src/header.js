@@ -34,6 +34,10 @@ const styles = StyleSheet.create({
     paddingTop: STATUSBAR_HEIGHT,
     height: APPBAR_HEIGHT + STATUSBAR_HEIGHT,
     ...Platform.select({
+      web: {
+        borderBottomWidth: StyleSheet.hairlineWidth,
+        borderBottomColor: '#A7A7AA',
+      },
       ios: {
         borderBottomWidth: StyleSheet.hairlineWidth,
         borderBottomColor: '#A7A7AA',

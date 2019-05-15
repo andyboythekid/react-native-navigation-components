@@ -22,6 +22,26 @@ const config = Platform.select({
       restSpeedThreshold: 0.01,
     },
   },
+  web: {
+    configIn: {
+      timing: Animated.spring,
+      stiffness: 1000,
+      damping: 500,
+      mass: 3,
+      overshootClamping: true,
+      restDisplacementThreshold: 0.01,
+      restSpeedThreshold: 0.01,
+    },
+    configOut: {
+      timing: Animated.spring,
+      stiffness: 1000,
+      damping: 500,
+      mass: 3,
+      overshootClamping: true,
+      restDisplacementThreshold: 0.01,
+      restSpeedThreshold: 0.01,
+    },
+  },
   android: {
     configIn: {
       duration: 350,

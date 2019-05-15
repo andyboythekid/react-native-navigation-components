@@ -85,6 +85,7 @@ class Stack extends React.Component {
 
           const animation = Platform.select({
             ios: slideInOut(indices),
+            web: slideInOut(indices),
             android: fadeInOut,
           })
 

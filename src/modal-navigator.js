@@ -87,6 +87,7 @@ class Modal extends React.Component {
 
     const animation = Platform.select({
       ios: this.animation,
+      web: this.animation,
       android: fadeInOut,
     })
 
